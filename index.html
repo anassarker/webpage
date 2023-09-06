@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dekstop/dekstop.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sign Up or Login</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">Shangiswor High School</h2>
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Menu</a>
+        <button class="btnlogin-popup">Login</button>
+      </nav>
+    </header>
+
+    <div class="wrapper active">
+      <span class="icon-close">
+        <ion-icon name="close"></ion-icon>
+      </span>
+      <div class="form-box login">
+        <h1>Login</h1>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input class="text" type="email" placeholder="Email" required />
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon> </span>
+            <input
+              class="text"
+              placeholder="Password"
+              type="password"
+              required/>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">Forgot Password</a>
+          </div>
+          <div><button type="submit" class="btn">Login</button></div>
+          <div class="login-register">
+            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="form-box register">
+        <h1>Registration</h1>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                <ion-icon name="person-sharp"></ion-icon>
+                </span>
+                <input class="text" type="text" placeholder="Username" required />
+              </div>
+            <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input class="text" type="email" placeholder="Email" required />
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon> </span>
+            <input
+              class="text"
+              placeholder="Password"
+              type="password"  required/>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />I agree to the terms & conditions</label>
+          </div>
+          <div><button type="submit" class="btn">Register</button></div>
+          <div class="register-login">
+            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
