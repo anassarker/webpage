@@ -1,5 +1,5 @@
 const wrapper = document.querySelector('.wrapper');
-const loginLink = document.querySelector('.btnLogin-popup'); // Update the selector
+const loginLink = document.querySelector('.btnLogin-popup');
 const registerLink = document.querySelector('.register-link');
 const iconClose = document.querySelector('.icon-close');
 
