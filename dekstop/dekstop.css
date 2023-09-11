@@ -63,7 +63,7 @@ header{
     transform: scaleX(1);
 
 }
-.navigation .btnlogin-popup{
+.navigation .btnLogin-popup{
     width: 130px;
     height: 50px;
     background: transparent;
@@ -76,7 +76,7 @@ header{
     cursor: pointer;
     transition: .5s;
 }
-.navigation .btnlogin-popup:hover{
+.navigation .btnLogin-popup:hover{
     background: #a08181;
     color: rgb(248, 244, 244);
     border-radius: 6px;
@@ -96,10 +96,14 @@ header{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: height .2s ease;
+    transform: scale(0);
+    transition: transform .3s ease-in , height .2s ease;
 }
 .wrapper.active{
     height: 520px;
+}
+.wrapper.active-popup{
+    transform: scale(1);
 }
 .wrapper .form-box{
     width: 100%;
@@ -107,7 +111,7 @@ header{
     align-items: center;
 }
 .wrapper .form-box.login {
-    transition: transform .18s ease;
+    transition: transform .30s ease;
     transform: translateX(0);
 }
 .wrapper.active .form-box.login {
@@ -115,7 +119,7 @@ header{
     transform: translateX(-400px);
 }
 .wrapper.active .form-box.register{
-    transition: transform .18s ease;
+    transition: transform .30s ease;
     transform: translateX(0);
 }
 .wrapper .form-box.register{
